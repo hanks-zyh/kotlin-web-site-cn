@@ -50,10 +50,10 @@ Kotlin 同样支持浮点数的常规表示方法:
 
 ``` kotlin
 val a: Int = 10000
-print(a identityEquals a) // Prints 'true'
+print(a === a) // Prints 'true'
 val boxedA: Int? = a
 val anotherBoxedA: Int? = a
-print(boxedA identityEquals anotherBoxedA) // !!!Prints 'false'!!!
+print(boxedA === anotherBoxedA) // !!!Prints 'false'!!!
 ```
 另一方面它们值相等:
 
